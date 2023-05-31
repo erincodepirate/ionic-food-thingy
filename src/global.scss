@@ -25,10 +25,18 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
 ion-title {
     font-weight: bold;
 }
 
-@import "swiper/scss";
-@import "swiper/scss/navigation";
-@import "swiper/scss/pagination";
+.swiper-pagination-bullet {
+    background: var(--ion-color-medium);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--ion-color-primary);
+}
