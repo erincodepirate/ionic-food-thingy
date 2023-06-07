@@ -4,12 +4,14 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BannerComponent } from './banner/banner.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { IonicModule } from '@ionic/angular';
+import { LoadingRestaurantComponent } from './loading-restaurant/loading-restaurant.component';
 
 
 @NgModule({
   declarations: [
     BannerComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    LoadingRestaurantComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { IonicModule } from '@ionic/angular';
   exports: [
     BannerComponent,
     RestaurantComponent,
+    LoadingRestaurantComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
